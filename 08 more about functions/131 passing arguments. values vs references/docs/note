@@ -1,0 +1,18 @@
+object yarat
+
+const passenger1 = {
+	firstName: 'Jack',
+	lastName: 'Brown',
+	passport: 1284904,
+};
+
+checkIn function yarat passenger argumentlei olsun
+functionun icine verilen objectin passportu 
+random deyish ki incorrect cavab versin
+
+
+if(passenger.passport === 1284904){
+	console.log('welcome on the board');
+}else{
+	console.log('incorrect passport');
+}	

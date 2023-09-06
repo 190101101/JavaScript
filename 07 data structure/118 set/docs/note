@@ -1,0 +1,11 @@
+set nedir? fikirlesh.
+set yarat
+set icine string ver
+setin icindeki stringin herf sayini oyren 
+sete array elave et
+sete val elave et
+setin icindeki val i sil
+setin icinde valin var/yox yoxla
+seti temizle
+seti iterable et
+seti destruct et

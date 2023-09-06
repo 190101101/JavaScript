@@ -1,0 +1,5 @@
+rest metodu ederek arrayin elementlerini p1, p2 ve others kimi paylash
+japaneseRestaurant da menunu yuxaridaki kimi rest et
+japaneseRestaurant da appetizers,mainMenu spread ederek iki dene yemek adi ve digerleri spread et (yuxaridaki kimi)
+workingHours u hefte son gunlerini ayri ve hefte icindeki gunleri bir yerde spread et
+function yaz icine nums array gonder spread ederek sum goster

@@ -1,0 +1,10 @@
+texti balaca herfler
+texti boyuk herfler
+textdeki boshluqlari sil
+bu texti 'lInDa jHOnSoN' duzelt
+textdeki bezi lazimsiz simbollari sil ve ya yerine bir element elave et
+textdeki bezi lazimsiz simbollari sil ve ya yerine bir element elave et (old)
+textin icindeki elementin varligini yoxla
+textin hansi yazi ile bashladigini stringin oz functionu ile yoxla
+textin hansi yazi ile qurtardigini stringin oz functionu ile yoxla
+function yarat ora string ver ve stringin icinde knife, gun kimi varsa kecmek olmaz

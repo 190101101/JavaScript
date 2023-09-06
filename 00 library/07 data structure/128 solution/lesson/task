@@ -1,0 +1,28 @@
+Напишите программу, которая берет список имен переменных, написанных в underscore_case, и преобразует их в camelCase.
+
+Ввод будет поступать из html-элемента textarea, вставленного в DOM (см. код ниже для вставки элементов), и преобразование произойдет при нажатии кнопки.
+
+Тестовые данные (для вставки в текстовое поле, включая пробелы):
+
+underscore_case
+first_name
+next_Variable
+Calculate_AGE
+arrived_flight
+
+Должен появиться этот вывод (5 отдельных выводов console.log):
+
+underscoreCase 
+firstName 
+nextVariable 
+calculateAge 
+arrivedFlight
+
+Подсказки:
+
+Запомните, какой символ определяет новую строку в текстовом поле
+Решение должно работать только для переменной из двух слов, такой как first_second
+Это сложная задача, поэтому начните смотреть решение, если вы застряли. Тогда сделайте паузу и продолжайте!
+
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
