@@ -1,0 +1,321 @@
+base\02 basic\09 console
+base\02 basic\10 comment
+base\02 basic\11 let & const
+base\02 basic\12 data type
+base\02 basic\13 conversion type
+base\02 basic\14 number operation
+base\02 basic\15 string
+base\02 basic\16 template string
+base\02 basic\17 prompt
+base\02 basic\18 comparison operators
+base\02 basic\19 operator precedence
+base\02 basic\20 abbreviated form of operators
+base\02 basic\21 task excess weight
+base\02 basic\22 if else
+base\02 basic\24 if else excess weight
+base\02 basic\25 truthy & falsy
+base\02 basic\26 boolean logic
+base\02 basic\27 switch
+base\02 basic\28 statement & expression
+base\02 basic\29 ternary operator
+base\02 basic\30 task ternary operator
+base\02 basic\32 JavaScript version
+base\02 basic\33 strick mode
+base\02 basic\34 function
+base\02 basic\35 function declaration vs expression
+base\02 basic\36 arrow function
+base\02 basic\37 function call inside
+base\02 basic\39 task function
+base\02 basic\40 solution function
+base\02 basic\41 array
+base\02 basic\42 array methods
+base\02 basic\43 array task
+base\02 basic\44 array solution
+base\02 basic\45 object
+base\02 basic\46 object dot vs bracket notation
+base\02 basic\47 object methods
+base\02 basic\48 object task
+base\02 basic\49 object solution
+base\02 basic\50 for
+base\02 basic\51 loop and array
+base\02 basic\52 break & continue
+base\02 basic\53 iterate backwards
+base\02 basic\54 while
+base\02 basic\55 while task
+base\02 basic\56 while solution
+base\03 developer skills\62 search for information
+base\03 developer skills\64 breakpoint console debug
+base\03 developer skills\65 dev skills task
+base\03 developer skills\66 dev skills solution
+base\06 under the hood javascript\91 javascript overview
+base\07 data structure\104 array destructuring
+base\07 data structure\105 object destructuring
+base\07 data structure\106 operator spread
+base\07 data structure\107 pattern rest
+base\07 data structure\108 Short-Circuit Evaluation
+base\07 data structure\109 nullish coalescing
+base\07 data structure\110 task
+base\07 data structure\111 solution
+base\07 data structure\112 loops and arrays for of
+base\07 data structure\113 improving object literals
+base\07 data structure\114 optional chaining
+base\07 data structure\115 loops and objects
+base\07 data structure\116 task
+base\07 data structure\117 solution
+base\07 data structure\118 set
+base\07 data structure\119 map
+base\07 data structure\120 map iteration
+base\07 data structure\121 what data structure to use
+base\07 data structure\122 task
+base\07 data structure\123 solution
+base\07 data structure\124 working with string 1
+base\07 data structure\125 working with string 2
+base\07 data structure\126 working with string 3
+base\07 data structure\127 task
+base\07 data structure\128 solution
+base\08 more about functions\00 sample
+base\08 more about functions\130 default options
+base\08 more about functions\131 passing arguments values vs references
+base\08 more about functions\132 first class functions vs higher order functions
+base\08 more about functions\133 functions accepting callback functions
+base\08 more about functions\134 functions returning functions
+base\08 more about functions\135 Методы call() и apply()
+base\08 more about functions\136 bind
+base\08 more about functions\138 task
+base\08 more about functions\139 solution
+base\08 more about functions\140 immediately invoked function expression (IIFE)
+base\08 more about functions\141 closures
+base\08 more about functions\142 more examples about closures
+base\08 more about functions\143 task
+base\08 more about functions\144 solution
+base\09 arrays\145 Code for the entire section
+base\09 arrays\146 Simple Array Methods
+base\09 arrays\147 Iterating Arrays Using a forEach Loop
+base\09 arrays\148 forEach With Map And Set
+base\09 arrays\149 Preview
+base\09 arrays\150 Creating DOM Elements
+base\09 arrays\151 Exercise 1
+base\09 arrays\152 Task 1 Solution
+base\09 arrays\153 Data Transformation map filter reduce
+base\09 arrays\154 map method
+base\09 arrays\155 Nicknames calculation
+base\09 arrays\156 filter method
+base\09 arrays\157 reduce method
+base\09 arrays\158 Displaying the balance in the application
+base\09 arrays\159 Task 2
+base\09 arrays\160 Task 2 Solution
+base\09 arrays\161 Method Chaining
+base\09 arrays\162 Method Chaining In Application
+base\09 arrays\163 Task 3
+base\09 arrays\164 Task 3 Solution
+base\09 arrays\165 find method
+base\09 arrays\166 Implementation of Login
+base\09 arrays\167 Implementation of Transfers
+base\09 arrays\168 findIndex method
+base\09 arrays\169 Methods some and every
+base\09 arrays\170 Loan Request
+base\09 arrays\171 Methods flat and flatMap
+base\09 arrays\172 Sorting Arrays
+base\09 arrays\173 Sorting Transactions in the Application
+base\09 arrays\174 Other Ways to Create and Fill Arrays
+base\09 arrays\175 Arrayfrom in a web application
+base\09 arrays\176 Which Method To Use
+base\09 arrays\177 Array Methods in Practice
+base\09 arrays\178 Note for Assignment 4
+base\09 arrays\179 Task 4
+base\09 arrays\180 Task 4 Solution
+base\12 OOP\221 constructor & operator new
+base\12 OOP\222 prototype
+base\12 OOP\224 Prototype Inheritance for Embedded Objects
+base\12 OOP\225 task
+base\12 OOP\226 solution
+base\12 OOP\227 Class ES6
+base\12 OOP\228 setters and getters
+base\12 OOP\229 static methods
+base\12 OOP\230 Object create
+base\12 OOP\231 task
+base\12 OOP\232 solution
+base\12 OOP\233 Class Inheritance
+base\12 OOP\234 task
+base\12 OOP\235 solution
+base\12 OOP\236 Class Inheritance ES6 Classes
+base\12 OOP\237 Class Inheritance Object create
+base\12 OOP\238 Another Class Example
+base\12 OOP\239 Encapsulation Protected Properties and Methods
+base\12 OOP\240 Encapsulation Private Fields and Class Methods
+base\12 OOP\241 Methods Chaining
+base\12 OOP\242 ES6 classes Summing up
+base\13 Cardio\247 How to Plan a Project
+base\13 Cardio\248 Using the Geolocation API
+base\13 Cardio\249 Displaying a Map Using the Leaflet Library
+base\13 Cardio\250 Map Marker Display
+base\13 Cardio\251 Placement Input Form Workouts
+base\13 Cardio\253 Refactoring the Code to the Project Architecture
+base\13 Cardio\254 Working with Training Data
+base\13 Cardio\255 create new training
+base\13 Cardio\256 training display
+base\13 Cardio\257 jump to marker on click
+base\13 Cardio\258 localStorage
+base\14 Asynchronous\261 Асинхронный JavaScript AJAX и API
+base\14 Asynchronous\262 Первый AJAX вызов - XMLHttpRequest
+base\14 Asynchronous\264 Что Такое Callback Hell
+base\14 Asynchronous\265 Promises & Fetch API
+base\14 Asynchronous\266 Потребление Promise
+base\14 Asynchronous\267 Promise Chaining
+base\14 Asynchronous\268 Обработка отклоненного Promise
+base\14 Asynchronous\269 Выбрасывание ошибок вручную
+base\14 Asynchronous\271 Задание 1 Решение
+base\14 Asynchronous\273 Event Loop на Практике
+base\14 Asynchronous\274 Создание Простого Promise
+base\14 Asynchronous\275 Промисификация API Геолокации
+base\14 Asynchronous\277 Задание 2 Решение
+base\14 Asynchronous\278 Использование Promise c async await
+base\14 Asynchronous\279 Обработка Ошибок при Помощи try catch
+base\14 Asynchronous\280 Возвращаемые Значения в Асинхронных Функциях
+base\14 Asynchronous\281 Запуск Нескольких Promise Параллельно
+base\14 Asynchronous\282 race, allSettled & any
+base\14 Asynchronous\284 Задание 3 Решение
+base\02 basic\09 console
+base\02 basic\10 comment
+base\02 basic\11 let & const
+base\02 basic\12 data type
+base\02 basic\13 conversion type
+base\02 basic\14 number operation
+base\02 basic\15 string
+base\02 basic\16 template string
+base\02 basic\17 prompt
+base\02 basic\18 comparison operators
+base\02 basic\19 operator precedence
+base\02 basic\20 abbreviated form of operators
+base\02 basic\21 task excess weight
+base\02 basic\22 if else
+base\02 basic\24 if else excess weight
+base\02 basic\25 truthy & falsy
+base\02 basic\26 boolean logic
+base\02 basic\27 switch
+base\02 basic\28 statement & expression
+base\02 basic\29 ternary operator
+base\02 basic\30 task ternary operator
+base\02 basic\32 JavaScript version
+base\02 basic\33 strick mode
+base\02 basic\34 function
+base\02 basic\35 function declaration vs expression
+base\02 basic\36 arrow function
+base\02 basic\37 function call inside
+base\02 basic\39 task function
+base\02 basic\40 solution function
+base\02 basic\41 array
+base\02 basic\42 array methods
+base\02 basic\43 array task
+base\02 basic\44 array solution
+base\02 basic\45 object
+base\02 basic\46 object dot vs bracket notation
+base\02 basic\47 object methods
+base\02 basic\48 object task
+base\02 basic\49 object solution
+base\02 basic\50 for
+base\02 basic\51 loop and array
+base\02 basic\52 break & continue
+base\02 basic\53 iterate backwards
+base\02 basic\54 while
+base\02 basic\55 while task
+base\02 basic\56 while solution
+base\03 developer skills\62 search for information
+base\03 developer skills\64 breakpoint console debug
+base\03 developer skills\65 dev skills task
+base\03 developer skills\66 dev skills solution
+base\06 under the hood javascript\91 javascript overview
+base\07 data structure\104 array destructuring
+base\07 data structure\105 object destructuring
+base\07 data structure\106 operator spread
+base\07 data structure\107 pattern rest
+base\07 data structure\108 Short-Circuit Evaluation
+base\07 data structure\109 nullish coalescing
+base\07 data structure\110 task
+base\07 data structure\111 solution
+base\07 data structure\112 loops and arrays for of
+base\07 data structure\113 improving object literals
+base\07 data structure\114 optional chaining
+base\07 data structure\115 loops and objects
+base\07 data structure\116 task
+base\07 data structure\117 solution
+base\07 data structure\118 set
+base\07 data structure\119 map
+base\07 data structure\120 map iteration
+base\07 data structure\121 what data structure to use
+base\07 data structure\122 task
+base\07 data structure\123 solution
+base\07 data structure\124 working with string 1
+base\07 data structure\125 working with string 2
+base\07 data structure\126 working with string 3
+base\07 data structure\127 task
+base\07 data structure\128 solution
+base\08 more about functions\130 default options
+base\08 more about functions\131 passing arguments values vs references
+base\08 more about functions\132 first class functions vs higher order functions
+base\08 more about functions\133 functions accepting callback functions
+base\08 more about functions\134 functions returning functions
+base\08 more about functions\135 Методы call и apply
+base\08 more about functions\136 bind
+base\08 more about functions\138 task
+base\08 more about functions\139 solution
+base\08 more about functions\140 immediately invoked function expression
+base\08 more about functions\141 closures
+base\08 more about functions\142 more examples about closures
+base\08 more about functions\143 task
+base\08 more about functions\144 solution
+base\09 arrays\145 Code for the entire section
+base\12 OOP\221 constructor & operator new
+base\12 OOP\222 prototype
+base\12 OOP\224 Prototype Inheritance for Embedded Objects
+base\12 OOP\225 task
+base\12 OOP\226 solution
+base\12 OOP\227 Class ES6
+base\12 OOP\228 setters and getters
+base\12 OOP\229 static methods
+base\12 OOP\231 task
+base\12 OOP\230 Object create
+base\12 OOP\232 solution
+base\12 OOP\233 Class Inheritance
+base\12 OOP\234 task
+base\12 OOP\235 solution
+base\12 OOP\236 Class Inheritance ES6 Classes
+base\12 OOP\237 Class Inheritance Object create
+base\12 OOP\238 Another Class Example
+base\12 OOP\239 Encapsulation Protected Properties and Methods
+base\12 OOP\240 Encapsulation Private Fields and Class Methods
+base\12 OOP\241 Methods Chaining
+base\12 OOP\242 ES6 classes Summing up
+base\12 OOP\243 repeat
+base\13 Cardio\247 How to Plan a Project
+base\13 Cardio\248 Using the Geolocation API
+base\13 Cardio\249 Displaying a Map Using the Leaflet Library
+base\13 Cardio\250 Map Marker Display
+base\13 Cardio\251 Placement Input Form Workouts
+base\13 Cardio\253 Refactoring the Code to the Project Architecture
+base\13 Cardio\254 Working with Training Data
+base\13 Cardio\255 create new training
+base\13 Cardio\256 training display
+base\13 Cardio\257 jump to marker on click
+base\13 Cardio\258 localStorage
+base\14 Asynchronous\261 Асинхронный JavaScript AJAX и API
+base\14 Asynchronous\262 Первый AJAX вызов - XMLHttpRequest
+base\14 Asynchronous\264 Что Такое Callback Hell
+base\14 Asynchronous\265 Promises & Fetch API
+base\14 Asynchronous\266 Потребление Promise
+base\14 Asynchronous\267 Promise Chaining
+base\14 Asynchronous\268 Обработка отклоненного Promise
+base\14 Asynchronous\269 Выбрасывание ошибок вручную
+base\14 Asynchronous\271 Задание 1 Решение
+base\14 Asynchronous\273 Event Loop на Практике
+base\14 Asynchronous\274 Создание Простого Promise
+base\14 Asynchronous\275 Промисификация API Геолокации
+base\14 Asynchronous\277 Задание 2 Решение
+base\14 Asynchronous\278 Использование Promise с async await
+base\14 Asynchronous\279 Обработка Ошибок при Помощи try catch
+base\14 Asynchronous\280 Возвращаемые Значения в Асинхронных Функциях
+base\14 Asynchronous\281 Запуск Нескольких Promise Параллельно
+base\14 Asynchronous\282 race, allSettled & any
+base\14 Asynchronous\284 Задание 3 Решение
+base\14 Asynchronous\277 Задание 2 Решение
+base\14 Asynchronous\284 Задание 3 Решение
