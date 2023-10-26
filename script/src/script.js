@@ -92,11 +92,33 @@ const createNickNames = (accounts) => {
 
 createNickNames(accounts);
 
-console.log(accounts);
-
 const displayBalance = (transactions) => {
   const balance = transactions.reduce((acc, trans) => acc + trans, 0);
   labelBalance.textContent = `${balance}$`;
 };
 
 displayBalance(account1.transactions);
+
+const displayTotal = (transactions) => {
+  const depositesTotal = transactions
+    .filter((trans) => trans > 0)
+    .reduce((acc, trans) => acc + trans, 0);
+  labelSumIn.textContent = `${depositesTotal}$`;
+
+  const withdrawalsTotal = transactions
+    .filter((trans) => trans < 0)
+    .reduce((acc, trans) => acc + trans, 0);
+  labelSumOut.textContent = `${withdrawalsTotal}$`;
+
+  const interestTotal = transactions
+    .filter((trans) => trans > 0)
+    .map((depos) => (depos * 1.1) / 100)
+    .filter((interest, index, arr) => {
+      return interest >= 5
+    })
+    .reduce((acc, interest) => acc + interest, 0);
+
+  labelSumInterest.textContent = `${interestTotal}$`;
+};
+
+displayTotal(account1.transactions);
