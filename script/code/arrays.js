@@ -3,18 +3,20 @@ const usdToEuro = 0.86;
 
 //* map
 const exchange = transactions.map((trans) => {
-    return trans * usdToEuro
-})
+  return trans * usdToEuro;
+});
 
 const transBox = [];
-for(const trans of transactions){
-    transBox.push(trans * usdToEuro);
+for (const trans of transactions) {
+  transBox.push(trans * usdToEuro);
 }
 
-const transactionsEuro = transactions.map(trans => trans * usdToEuro);
+const transactionsEuro = transactions.map((trans) => trans * usdToEuro);
 
-const transactionDesctiptions = transactions.map((transaction, index ) => {
-    return `Transaction number: ${index + 1}: ${Math.abs(transaction)} was ${transaction > 0 ? 'deposited' : 'withdrew'}`;
-})
+const transactionDesctiptions = transactions.map((transaction, index) => {
+  return `Transaction number: ${index + 1}: ${Math.abs(transaction)} was ${
+    transaction > 0 ? "deposited" : "withdrew"
+  }`;
+});
 
 console.log(transactionDesctiptions);
