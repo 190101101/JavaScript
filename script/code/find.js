@@ -44,8 +44,8 @@ const account5 = {
 
 const accounts = [account1, account2, account3, account4, account5];
 
-const coreyMartinezAccount = accounts.find(
+const coreyMartinez = accounts.find(
   (user) => user.userName === "Corey Martinez"
 );
 
-console.log(coreyMartinezAccount);
+console.log(coreyMartinez);
