@@ -114,7 +114,7 @@ const displayTotal = (transactions) => {
     .filter((trans) => trans > 0)
     .map((depos) => (depos * 1.1) / 100)
     .filter((interest, index, arr) => {
-      return interest >= 5
+      return interest >= 5;
     })
     .reduce((acc, interest) => acc + interest, 0);
 
