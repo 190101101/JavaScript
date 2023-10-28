@@ -78,8 +78,6 @@ const displayTransactions = (account) => {
   });
 };
 
-// displayTransactions(account1);
-
 const createNickNames = (accounts) => {
   accounts.map((account) => {
     account.nickName = account.userName
@@ -97,8 +95,6 @@ const displayBalance = (account) => {
   labelBalance.textContent = `${balance}$`;
   account.balance = balance;
 };
-
-// displayBalance(account1);
 
 const displayTotal = (account) => {
   const depositesTotal = account.transactions
@@ -128,10 +124,11 @@ const updateUi = (account) => {
   displayTotal(account);
 };
 
+let currentAccount;
+
 //? event handlers
 // btnLogin.addEventListener("click", (e) => {
 //   e.preventDefault();
-let currentAccount;
 
 inputLoginUsername.value = "ci";
 inputLoginPin.value = "1111";
@@ -222,3 +219,4 @@ btnLoan.addEventListener("click", (e) => {
   inputLoanAmount.textContent = '';
   inputLoanAmount.blur();
 });
+
