@@ -220,3 +220,8 @@ btnLoan.addEventListener("click", (e) => {
   inputLoanAmount.blur();
 });
 
+btnSort.addEventListener('click', (e) => {
+  console.log(123);
+  currentAccount.transactions.sort();
+  updateUi(currentAccount);
+})
