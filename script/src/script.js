@@ -72,7 +72,7 @@ const displayTransactions = (account, sort = false) => {
 
   transactions.forEach((trans, index) => {
     const transType = trans > 0 ? "deposit" : "withdrawal";
-    const transactionsRow = `<div class="transactions__row">
+    const transactionsRow = `<div class="transactions__row"}>
     <div class="transactions__type transactions__type--${transType}">
       ${index + 1} ${transType}
     </div>
