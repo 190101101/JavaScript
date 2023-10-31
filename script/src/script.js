@@ -203,7 +203,6 @@ const updateUi = (account) => {
 
 let currentAccount;
 
-/*
 //always logged in
 currentAccount = account1;
 updateUi(currentAccount);
@@ -218,7 +217,6 @@ labelDate.textContent = new Intl.DateTimeFormat(navigator.language, {
   year: "numeric",
   weekday: "long",
 }).format(new Date());
-*/
 
 //? event handlers
 btnLogin.addEventListener("click", (e) => {
