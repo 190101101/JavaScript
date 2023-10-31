@@ -345,14 +345,19 @@ btnLoan.addEventListener("click", (e) => {
     (trans) => trans >= (loanAmount * 10) / 100
   );
 
-  if (loanAmount > 0 && interestCheck) {
-    currentAccount.transactions.push(loanAmount);
-    currentAccount.transactionsDates.push(new Date().toISOString());
-    updateUi(currentAccount);
-  }
+  console.log('loan... waiting...');
 
-  inputLoanAmount.textContent = "";
-  inputLoanAmount.blur();
+  setTimeout(() => {
+    if (loanAmount > 0 && interestCheck) {
+      currentAccount.transactions.push(loanAmount);
+      currentAccount.transactionsDates.push(new Date().toISOString());
+      updateUi(currentAccount);
+      console.log(`transaction pushed: ${loanAmount}`);
+    }
+
+    inputLoanAmount.textContent = "";
+    inputLoanAmount.blur();
+  }, 3000);
 });
 
 let transactionsSorted = false;
