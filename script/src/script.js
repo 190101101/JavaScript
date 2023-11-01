@@ -58,7 +58,7 @@ h1.onclick = () => {
 
 const alertMouseEnterH1 = (e) => {
   alert("events mouseenter");
-  h1.removeEventListener("mouseenter", alertMouseEnterH1);
+  h1.removeEventListener("mouseenter", alertMouseEnterH1)
 };
 
 h1.addEventListener("mouseenter", alertMouseEnterH1);
