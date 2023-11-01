@@ -285,8 +285,8 @@ btnLogin.addEventListener("click", (e) => {
     // check if the timer exists;
     if (currentLogOutTimer) clearInterval(currentLogOutTimer);
 
+    clearInterval(currentLogOutTimer);
     currentLogOutTimer = startLogoutTimer();
-
     updateUi(currentAccount);
   }
 });
@@ -366,7 +366,7 @@ btnLoan.addEventListener("click", (e) => {
       updateUi(currentAccount);
       console.log(`transaction pushed: ${loanAmount}`);
     }
-  }, 1000);
+  }, 100);
   
   inputLoanAmount.textContent = "";
   inputLoanAmount.blur();
@@ -413,7 +413,7 @@ const startLogoutTimer = () => {
   };
 
   // установить время выхода через 5 минут
-  let time = 60;
+  let time = 300;
 
   //вызов таймера каждую секунду
   logOutTimeCallback();

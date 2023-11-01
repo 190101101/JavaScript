@@ -21,12 +21,8 @@ const closeModalWindow = () => {
   overlay.classList.add('hidden');
 };
 
-// for (let i = 0; i < btnsOpenModalWindow.length; i++)
-  // btnsOpenModalWindow[i].addEventListener('click', openModalWindow);
-
-btnsOpenModalWindow.forEach((button) => {
-  button.addEventListener('click', openModalWindow);
-})
+for (let i = 0; i < btnsOpenModalWindow.length; i++)
+  btnsOpenModalWindow[i].addEventListener('click', openModalWindow);
 
 btnCloseModalWindow.addEventListener('click', closeModalWindow);
 overlay.addEventListener('click', closeModalWindow);
