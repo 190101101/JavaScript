@@ -19,7 +19,7 @@ const openModalWindow = (e) => {
 const closeModalWindow = () => {
   modalWindow.classList.add('hidden');
   overlay.classList.add('hidden');
-};
+}
 
 // for (let i = 0; i < btnsOpenModalWindow.length; i++)
   // btnsOpenModalWindow[i].addEventListener('click', openModalWindow);
