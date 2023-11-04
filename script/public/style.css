@@ -36,7 +36,6 @@ body {
 .section {
   padding: 15rem 3rem;
   border-top: 1px solid rgb(213, 213, 213);
-
   transition: transform 1s, opacity 1s;
 }
 
@@ -383,7 +382,6 @@ h4 {
   height: 50rem;
   margin: 0 auto;
   position: relative;
-
   overflow: hidden;
 }
 
@@ -683,7 +681,9 @@ h4 {
   box-shadow: 0px 0px 10px 1px #5eeee7;
 }
 
-.loading-color{
+.loading-indicator{
   box-shadow: 0px 0px 10px 1px pink !important;
   background-color: pink !important;
+  transition: width 2s, left 2s !important;
+  left: 105% !important;
 }

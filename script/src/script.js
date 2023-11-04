@@ -1,8 +1,5 @@
 "use strict";
 
-///////////////////////////////////////
-// Modal window
-
 const modalWindow = document.querySelector(".modal-window");
 const overlay = document.querySelector(".overlay");
 const btnCloseModalWindow = document.querySelector(".btn--close-modal-window");
@@ -10,8 +7,13 @@ const btnsOpenModalWindow = document.querySelectorAll(
   ".btn--show-modal-window"
 );
 
-const btnScrollTo1 = document.querySelector(".btn--scroll-to");
-const section1 = document.querySelector("#section--1");
+window.addEventListener("load", () => {
+  const loadingIndicator = document.getElementById("loading-indicator");
+  loadingIndicator.style.width = "105%";
+  setTimeout(() => {
+    loadingIndicator.classList.add("loading-indicator");
+  }, 2000);
+});
 
 const openModalWindow = (e) => {
   e.preventDefault();
@@ -37,14 +39,7 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-window.addEventListener("load", function () {
-  const loadingIndicator = document.getElementById("loading-indicator");
-  loadingIndicator.style.width = "105%";
-  setTimeout(() => {
-    loadingIndicator.classList.add("loading-color");
-    loadingIndicator.style.transition = "width 2s, left 2s";
-    loadingIndicator.style.left = "105%";
-  }, 2000);
-});
-
 /////////////
+
+const btnScrollTo1 = document.querySelector(".btn--scroll-to");
+const section1 = document.querySelector("#section--1");
