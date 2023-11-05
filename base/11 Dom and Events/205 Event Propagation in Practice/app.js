@@ -40,10 +40,28 @@ document.addEventListener("keydown", (e) => {
 });
 
 /////////////
-//? currentTarget zencir vari parente qeder gedir.
-//? target yalniz click olana aiddir
-//? Propagation dayandirmaq ucun e.stopPropagation()
-//? currentTarget === this => true
-//? EventListener - 3 cu param boolean qebul edir. eger true ise 1 ci faza da olur default olarak false olur. amma bu param artik kohnedir.
+//? cookie
+const message = document.createElement("div");
+message.classList.add("cookie-message");
+message.style.backgroundColor = "#076785";
+message.style.width = "120%";
 
-//* task => Event Propagation praktika
+message.innerHTML =
+  'do you want save a cookies <button class="btn btn--close-cookie">ok</button>';
+const header = document.querySelector(".header");
+header.prepend(message);
+
+// console.log(message);
+
+document.querySelector(".btn--close-cookie").addEventListener("click", (e) => {
+  message.remove();
+});
+
+//? scroll
+const btnScrollTo = document.querySelector(".btn--scroll-to");
+const section1 = document.querySelector("#section--1");
+
+btnScrollTo.addEventListener("click", (e) => {
+  e.preventDefault();
+  section1.scrollIntoView({behavior: 'smooth'});
+});
