@@ -40,28 +40,28 @@ document.addEventListener("keydown", (e) => {
 });
 
 /////////////
-//?task
-// 1. type event 
-// *event elave etmek 
-// *event yox etmek 
-/////////////
-// Types of Events and Event Handlers
+//? cookie
+const message = document.createElement("div");
+message.classList.add("cookie-message");
+message.style.backgroundColor = "#076785";
+message.style.width = "120%";
 
-const h1 = document.querySelector('h1');
+message.innerHTML =
+  'do you want save a cookies <button class="btn btn--close-cookie">ok</button>';
+const header = document.querySelector(".header");
+header.prepend(message);
 
-h1.addEventListener('mouseenter', (e) => {
-    console.log(e);
+// console.log(message);
+
+document.querySelector(".btn--close-cookie").addEventListener("click", (e) => {
+  message.remove();
 });
 
-//? old version
-h1.onclick = (e) => console.log(e);
+//? scroll
+const btnScrollTo = document.querySelector(".btn--scroll-to");
+const section1 = document.querySelector("#section--1");
 
-const alertMouseEnterH1 = (e) => {
-  console.log('mouse entered');
-
-  setTimeout(() => {
-    h1.removeEventListener('mouseenter', alertMouseEnterH1);
-  }, 3000)
-}
-
-h1.addEventListener('mouseenter', alertMouseEnterH1);
+btnScrollTo.addEventListener("click", (e) => {
+  e.preventDefault();
+  section1.scrollIntoView({behavior: 'smooth'});
+});
