@@ -40,36 +40,4 @@ document.addEventListener("keydown", (e) => {
 });
 
 /////////////
-
-//? 209 Passing Arguments To Event Handlers
-
-const nav = document.querySelector(".nav");
-const navLinks = document.querySelector(".nav__links");
-const navLink = document.querySelectorAll(".nav__link");
-
-const navLinksHoverAnimation = function (e) {
-  e.preventDefault();
-
-  if (!e.target.classList.contains("nav__link")) return;
-
-  const linkOver = e.target;
-
-  const siblingLinks = linkOver
-    .closest(".nav__links")
-    .querySelectorAll(".nav__link");
-
-  const logo = linkOver.closest(".nav").querySelector("img");
-
-  const navText = linkOver.closest(".nav").querySelector(".nav__text");
-
-  siblingLinks.forEach((el) => {
-    if (el !== linkOver) el.style.opacity = this;
-  });
-  logo.style.opacity = this;
-  navText.style.opacity = this;
-};
-
-//? bind komekliyi ile argumentlerle calishmaq bind() / this
-nav.addEventListener("mouseover", navLinksHoverAnimation.bind(0.4));
-nav.addEventListener("mouseout", navLinksHoverAnimation.bind(1));
-
+//? Event Delegation
