@@ -59,7 +59,7 @@ document.querySelector(".nav__link").addEventListener("click", function (e) {
   this.style.backgroundColor = getRandomColor();
   console.log("nav__link", e.target, e.currentTarget);
   //?stop propagation
-  // e.stopPropagation();
+  e.stopPropagation();
 });
 
 document.querySelector(".nav__links").addEventListener("click", function (e) {

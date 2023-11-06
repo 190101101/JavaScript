@@ -18,3 +18,12 @@
 //? yana doğru hərəkət
 //? parentin childrenlerini getir
 //? h1 , h2 taglar uzerinde numune goster
+
+//Todo: 208 tabs
+//? 1 tabs .operations__tab
+//? 2 tabContainer .operations__tab-container
+//? 3 tabContents .operations__content
+//? 4 click olunmush parentin operations__tab tap
+//? 5 operations__tab beraber deyilse cix
+//? 6 tabs lari active ni remove etmek
+//? 7 content ucun tekrarlar
