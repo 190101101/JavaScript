@@ -7,5 +7,14 @@
 
 //Todo: 207 Event Delegation (делегирования событий);
 //? 1. ümumi parent ucun event listener elave et.
-//? 3. eget target olunmush element nav__link deyilse false
+//? 2. eget target olunmush element nav__link deyilse false
 //? 3. target olunmush elementi mueyyen et
+
+
+//Todo: 207 Moving Through the DOM (Перемещение по DOM)
+//? ashagi dogru hereket (child)
+//? yuxari dogru hereket (parent)
+//? yaxin parente catmaq
+//? yana doğru hərəkət
+//? parentin childrenlerini getir
+//? h1 , h2 taglar uzerinde numune goster

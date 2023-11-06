@@ -40,43 +40,11 @@ document.addEventListener("keydown", (e) => {
 });
 
 /////////////
-//? cookie
-const message = document.createElement("div");
-message.classList.add("cookie-message");
-message.style.backgroundColor = "#076785";
-message.style.width = "120%";
-
-message.innerHTML =
-  'do you want save a cookies <button class="btn btn--close-cookie">ok</button>';
-const header = document.querySelector(".header");
-header.prepend(message);
-
-// console.log(message);
-
-document.querySelector(".btn--close-cookie").addEventListener("click", (e) => {
-  message.remove();
-});
-
-//? scroll
-const btnScrollTo = document.querySelector(".btn--scroll-to");
-const section1 = document.querySelector("#section--1");
-
-btnScrollTo.addEventListener("click", (e) => {
-  e.preventDefault();
-  section1.scrollIntoView({behavior: 'smooth'});
-});
-
 //? Event Delegation
-document.querySelector(".nav__links").addEventListener("click", (e) => {
+
+const navLink = document.querySelector(".nav__link");
+
+navLink.addEventListener("click", (e) => {
   e.preventDefault();
-  
-  //? 3. eget target olunmush element nav__link deyilse false
-  if (!e.target.classList.contains("nav__link")) return;
-  
-  //? 3. target olunmush elementi mueyyen et
-  document
-    .querySelector(e.target.getAttribute("href"))
-    .scrollIntoView({ behavior: "smooth" });
+  console.log(e.target.parentElement);
 });
-
-
