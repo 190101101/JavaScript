@@ -40,17 +40,4 @@ document.addEventListener("keydown", (e) => {
 });
 
 /////////////
-
-//? 210 sticky navigation
-
-const section1Coords = document
-  .querySelector("#section--1")
-  .getBoundingClientRect();
-
-window.addEventListener("scroll", (e) => {
-  if(window.scrollY > section1Coords.top){
-    document.querySelector('.nav').classList.add('sticky');
-  }else{
-    document.querySelector('.nav').classList.remove('sticky');
-  }
-});
+//? Event Delegation
