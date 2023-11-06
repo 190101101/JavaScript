@@ -33,3 +33,11 @@
 //? 2 umumi variable teyin et ve qonshu elementleri ondan cixart
 //? 3 opacity 0.4 teyin et
 //? 4 function yarat 2 dene over ve out onlari yaratdigin tek funca birleshdir.
+
+//Todo: 211 inter section observer API 2
+//? 1 document .header 
+//? 2 document .nav
+//? 3 nav in hundurluyu js in oz func ile 
+//? 4 getStickyNav = (entries) => {} 
+//? 5 const observer = new IntersectionObserver
+//? 6 tamamla

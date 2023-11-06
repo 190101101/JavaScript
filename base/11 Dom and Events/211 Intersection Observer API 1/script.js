@@ -41,23 +41,20 @@ document.addEventListener("keydown", (e) => {
 
 /////////////
 
-//? 211 inter section observer API 2
+//? 211 inter section observer API
 
-const header = document.querySelector(".header");
-const nav = document.querySelector(".nav");
-const navHeight = nav.getBoundingClientRect().height;
-
-const getStickyNav = (entries) => {
-  !entries[0].isIntersecting
-    ? nav.classList.add("sticky")
-    : nav.classList.remove("sticky");
+const observerCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+  });
 };
 
-const observer = new IntersectionObserver(getStickyNav, {
+const observerOptions = {
   root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`
-});
+  threshhold: 0.1,
+};
 
-observer.observe(header);
+const observer = new IntersectionObserver(observerCallback, observerOptions);
 
+const section1 = document.querySelector("#section--1");
+observer.observe(section1);
