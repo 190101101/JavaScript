@@ -1,7 +1,7 @@
 //TODO 206 Event Propagation (Распространение событий);
 //? currentTarget zencir vari parente qeder gedir.
 //? target yalniz click olana aiddir
-//? Propagation dayandirmaq ucun e.stopPropagation()
+//? Propagation dayandir
 //? currentTarget === this => true
 //? EventListener - 3 cu param boolean qebul edir. eger true ise 1 ci faza da olur default olarak false olur. amma bu param artik kohnedir.
 
@@ -34,7 +34,7 @@
 //? 3 opacity 0.4 teyin et
 //? 4 function yarat 2 dene over ve out onlari yaratdigin tek funca birleshdir.
 
-//Todo: 211 inter section observer API 2
+//Todo: 211 inter section observer API 2 +
 //? 1 document .header 
 //? 2 document .nav
 //? 3 nav in hundurluyu js in oz func ile 

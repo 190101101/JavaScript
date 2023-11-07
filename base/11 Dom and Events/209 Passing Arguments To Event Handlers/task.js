@@ -40,31 +40,30 @@ document.addEventListener("keydown", (e) => {
 });
 
 /////////////
+// Todo: 209 Passing Arguments To Event Handlers
+//? 1 target olunmushu yoxla nav__link classini
+//? 2 umumi variable teyin et ve qonshu elementleri ondan cixart
+//? 3 opacity 0.4 teyin et
+//? 4 function yarat 2 dene over ve out onlari yaratdigin tek funca birleshdir.
 
-//Todo: 211 inter section observer API 2
-//? 1 document .header
-//? 2 document .nav
-//? 3 nav in hundurluyu js in oz func ile
-//? 4 getStickyNav = (entries) => {}
-//? 5 const observer = new IntersectionObserver
-//? 6 tamamla
-
-const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
-const navHeight = nav.getBoundingClientRect().height;
 
-const getStickyNav = (entries) => {
-  !entries[0].isIntersecting
-    ? nav.classList.add("sticky") 
-    : nav.classList.remove("sticky");
+const navLinksHoverAnimation = function (e) {
+  e.preventDefault();
+  if (!e.target.classList.contains("nav__link")) return;
+
+  console.log(e.target);
+
+  e.target
+    .closest(".nav__links")
+    .querySelectorAll(".nav__link")
+    .forEach((el) => {
+      if (el !== e.target) el.style.opacity = this;
+    });
+
+  e.target.closest(".nav").querySelector(".nav__text").style.opacity = this;
+  e.target.closest(".nav").querySelector(".nav__logo").style.opacity = this;
 };
 
-const options = {
-  root: null,
-  threshold: 0.1,
-  rootMargin: `-${navHeight}px`,
-};
-
-const observer = new IntersectionObserver(getStickyNav, options);
-
-observer.observe(header);
+nav.addEventListener("mouseover", navLinksHoverAnimation.bind(0.4));
+nav.addEventListener("mouseout", navLinksHoverAnimation.bind(1));

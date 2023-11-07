@@ -41,7 +41,13 @@ document.addEventListener("keydown", (e) => {
 
 /////////////
 
-//? 211 inter section observer API 2
+//Todo: 211 inter section observer API 2
+//? 1 document .header
+//? 2 document .nav
+//? 3 nav in hundurluyu js in oz func ile
+//? 4 getStickyNav = (entries) => {}
+//? 5 const observer = new IntersectionObserver
+//? 6 tamamla
 
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
@@ -49,15 +55,16 @@ const navHeight = nav.getBoundingClientRect().height;
 
 const getStickyNav = (entries) => {
   !entries[0].isIntersecting
-    ? nav.classList.add("sticky")
+    ? nav.classList.add("sticky") 
     : nav.classList.remove("sticky");
 };
 
-const observer = new IntersectionObserver(getStickyNav, {
+const options = {
   root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`
-});
+  threshold: 0.1,
+  rootMargin: `-${navHeight}px`,
+};
+
+const observer = new IntersectionObserver(getStickyNav, options);
 
 observer.observe(header);
-

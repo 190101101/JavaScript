@@ -101,3 +101,20 @@ tabContainer.addEventListener("click", (e) => {
 });
 
 
+//? 211 inter section observer API 2
+const nav = document.querySelector(".nav");
+const navHeight = nav.getBoundingClientRect().height;
+
+const getStickyNav = (entries) => {
+  !entries[0].isIntersecting
+    ? nav.classList.add("sticky")
+    : nav.classList.remove("sticky");
+};
+
+const observer = new IntersectionObserver(getStickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`
+});
+
+observer.observe(header);
