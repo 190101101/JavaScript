@@ -41,25 +41,30 @@ document.addEventListener("keydown", (e) => {
 
 /////////////
 
-//? 212 Show Elements When Scrolling
+//Todo: 211 inter section observer API 2
+//? 1 document .header
+//? 2 document .nav
+//? 3 nav in hundurluyu js in oz func ile
+//? 4 getStickyNav = (entries) => {}
+//? 5 const observer = new IntersectionObserver
+//? 6 tamamla
 
-// section--hidden
-const allSections = document.querySelectorAll("section");
+const header = document.querySelector(".header");
+const nav = document.querySelector(".nav");
+const navHeight = nav.getBoundingClientRect().height;
 
-const appearanceSection = (entries, observer) => {
-  console.log(entries[0]);
-  if (!entries[0].isIntersecting) return;
-  entries[0].target.classList.remove("section--hidden");
-  observer.unobserve(entries[0].target);
+const getStickyNav = (entries) => {
+  !entries[0].isIntersecting
+    ? nav.classList.add("sticky") 
+    : nav.classList.remove("sticky");
 };
 
-const observer = new IntersectionObserver(appearanceSection, {
+const options = {
   root: null,
-  treshhold: 0.2,
-});
+  threshold: 0.1,
+  rootMargin: `-${navHeight}px`,
+};
 
-allSections.forEach((section) => {
-  observer.observe(section);
-  section.classList.add("section--hidden");
-});
+const observer = new IntersectionObserver(getStickyNav, options);
 
+observer.observe(header);

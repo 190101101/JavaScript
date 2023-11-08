@@ -41,3 +41,9 @@
 //? 4 getStickyNav = (entries) => {} 
 //? 5 const observer = new IntersectionObserver
 //? 6 tamamla
+
+//Todo: 212 Show Elements When Scrolling
+//? 1 .section lari sec
+//? 2 appearanceSection func yarat
+//? 3 .section larin icinde observer i yoxla
+//? 4 appearanceSection icinde class remove et

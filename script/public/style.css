@@ -681,8 +681,6 @@ h4 {
 }
 
 .loading-indicator{
-  box-shadow: 0px 0px 10px 1px pink !important;
-  background-color: pink !important;
   transition: width 2s, left 2s !important;
   left: 105% !important;
 }
