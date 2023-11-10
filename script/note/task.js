@@ -42,9 +42,20 @@
 //? 5 const observer = new IntersectionObserver
 //? 6 tamamla
 
-
 //Todo: 212 Show Elements When Scrolling
 //? 1 .section lari sec
 //? 2 appearanceSection func yarat
 //? 3 .section larin icinde observer i yoxla
 //? 4 appearanceSection icinde section--hidden class remove et
+
+//Todo: 214 Creating a Slider Part 1
+//? 1 .slide classlari sec
+//? 2 .btn right left classlari sec
+//? 3 slide neceden bashlamalidi?
+//? 4 slide saylari teyin et
+//? 5 moveToSlide
+//? 6 moveToSlide icinde slide leri listed et
+//? 7 nece hereket edecek deye style ver.
+//? 9 slide ni bashlat
+//? 10 sag sol eventleri yarat
+//? 11 event icinde ternari yol ile currentSlide... hell et
