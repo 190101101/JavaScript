@@ -143,14 +143,36 @@ lazyImages.forEach((image) => {
   lazyImagesObserver.observe(image);
 });
 
-//? 214 Creating a Slider Part 1
-
+//? 215
 const slides = document.querySelectorAll(".slide");
-const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
+const btnLeft = document.querySelector(".slider__btn--left");
+const dotContainer = document.querySelector(".dots");
 
 let currentSlide = 0;
-const countSlides = slides.length;
+let countSlides = slides.length;
+
+const createDots = () => {
+  slides.forEach((_, index) => {
+    const buttonElement = document.createElement("button");
+    buttonElement.classList.add("dots__dot");
+    buttonElement.setAttribute("data-slide", index);
+    dotContainer.insertAdjacentElement("beforeend", buttonElement);
+  });
+};
+
+createDots();
+
+const activateCurrentDot = (slide) => {
+  document.querySelectorAll(".dots__dot").forEach((dot) => {
+    dot.classList.remove("dots__dot--active");
+  });
+  document
+    .querySelector(`.dots__dot[data-slide="${slide}"]`)
+    .classList.add("dots__dot--active");
+};
+
+activateCurrentDot(0)
 
 const moveToSlide = (currentSlide) => {
   slides.forEach((slide, index) => {
@@ -160,14 +182,27 @@ const moveToSlide = (currentSlide) => {
 
 moveToSlide(0);
 
-// 1 - 0%, 2 - 100%, 3 - 200%,
-btnRight.addEventListener("click", (e) => {
+const nextSlide = function () {
   currentSlide === countSlides - 1 ? (currentSlide = 0) : currentSlide++;
+  activateCurrentDot(currentSlide);
   moveToSlide(currentSlide);
+};
+const prevSlide = function () {
+  currentSlide === 0 ? (currentSlide = countSlides - 1) : currentSlide--;
+  activateCurrentDot(currentSlide);
+  moveToSlide(currentSlide);
+};
+
+btnRight.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", prevSlide);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") nextSlide();
+  if (e.key === "ArrowLeft") prevSlide();
 });
 
-// 1 - -100%, 2 - 0%, 3 - 100%,
-btnLeft.addEventListener("click", (e) => {
-  currentSlide === 0 ? (currentSlide = countSlides - 1) : currentSlide--;
-  moveToSlide(currentSlide);
+dotContainer.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("dots__dot")) return;
+  moveToSlide(e.target.dataset.slide);
+  activateCurrentDot(e.target.dataset.slide);
 });

@@ -59,3 +59,24 @@
 //? 9 slide ni bashlat
 //? 10 sag sol eventleri yarat
 //? 11 event icinde ternari yol ile currentSlide... hell et
+
+//Todo: 215 Creating a Slider Part 1
+//? 1 .slide classlari sec +
+//? 2 .btn right left classlari sec slider__btn--left, slider__btn--right +
+//? 3 slide neceden bashlamalidi? +
+//? 4 countSlides slide saylari teyin et +
+//? 5 moveToSlide +
+//? 6 moveToSlide icinde slide leri listed et +
+//? 7 nece hereket edecek deye style ver. +
+//? 9 slide ni bashlat +
+//? 10 sag sol eventleri yarat +
+//? 11 event icinde ternari yol ile currentSlide... hell et +
+//? 12 next, prev slide func yarat +
+//? 13 btn events lerin icinde cagir +
+//? 14 arrow larla slide ni cevirmek +
+//? 15 dotContainer .dots sec createDots func yarat
+//? 16 icinde dots__dot button elave et ve attribute data-slide.
+//? 17 activateCurrentDot yarat ve icinde dots__dot lari dots__dot--active remove
+//? 18 activateCurrentDot icinde slide ni dots__dot--active et
+//? 19 activateCurrentDot bashqa hereketlerdede cagir
+//? 20 dotContainer event yarat dots__dot lara click edende
