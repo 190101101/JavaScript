@@ -1,8 +1,0 @@
-Destructuring Arrays - Massivlərin dağıdılması
-
-1 numune - massiv yarat ve dagit
-2 object yarat onun icinde massiv ve o massivi dagit
-3 object icindeki dagidilmish o massivlerin yerlerini bir setirde deyish
-4 nested arr numunesini goster - massivi dagitmaq sherti ile
-5 massiv dagilmasinda -  default values numunesini goster
-+
